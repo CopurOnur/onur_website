@@ -4,21 +4,36 @@ import { useState, useEffect } from "react"
 import { BlinkingCursor } from "./pixel-animations"
 
 const TERMINAL_MESSAGES = [
-  "Initializing deep learning systems...",
-  "Loading neural networks...",
-  "Compiling computer vision models...",
-  "Optimizing pixel art renderer...",
-  "Welcome to Alex Chen's portfolio!",
+  "Importing PyTorch modules...",
+  "Warming up coffee-powered CPUs...",
+  "Connecting to GPU: NVIDIA RTX A30 [✓]",
+  "Feeding data to hungry neural nets...",
+  "Welcome to Onur Copur's portfolio!",
 ]
 
 export function RetroTerminal() {
   const [currentMessage, setCurrentMessage] = useState(0)
   const [displayText, setDisplayText] = useState("")
   const [isComplete, setIsComplete] = useState(false)
+  const [hasShown, setHasShown] = useState(false)
 
   useEffect(() => {
+    // Check if animation has already been shown in this session
+    const hasAnimationPlayed = sessionStorage.getItem('bootAnimationPlayed')
+    if (hasAnimationPlayed) {
+      setIsComplete(true)
+      return
+    }
+
+    setHasShown(true)
+  }, [])
+
+  useEffect(() => {
+    if (!hasShown) return
     if (currentMessage >= TERMINAL_MESSAGES.length) {
       setIsComplete(true)
+      // Mark animation as played in session storage
+      sessionStorage.setItem('bootAnimationPlayed', 'true')
       return
     }
 
@@ -34,12 +49,12 @@ export function RetroTerminal() {
         setTimeout(() => {
           setCurrentMessage(currentMessage + 1)
           setDisplayText("")
-        }, 1000)
+        }, 500)
       }
-    }, 50)
+    }, 30)
 
     return () => clearInterval(typeInterval)
-  }, [currentMessage])
+  }, [currentMessage, hasShown])
 
   if (isComplete) return null
 

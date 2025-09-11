@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Eye, Cpu, Zap, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
-import { BlinkingCursor, TwinklingStars } from "@/components/pixel-animations"
+import { BlinkingCursor } from "@/components/pixel-animations"
 import { KonamiCode } from "@/components/konami-code"
 import { RetroTerminal } from "@/components/retro-terminal"
 
@@ -11,7 +11,6 @@ export default function HomePage() {
   return (
     <>
       <KonamiCode />
-      <TwinklingStars />
       <RetroTerminal />
       <PixelLayout>
         <div className="max-w-6xl mx-auto space-y-12 relative z-10">
@@ -89,7 +88,7 @@ export default function HomePage() {
                 </h2>
                 <div className="space-y-4 text-foreground leading-relaxed">
                   <p>
-                    I'm a dedicated Computer Vision / AI Engineer with expertise in developing production-grade deep
+                    I'm a Computer Vision / AI Engineer with expertise in developing production-grade deep
                     learning models including LLMs, VLMs, and Foundation Models. Currently working at Prime Vision in
                     Delft, Netherlands, where I architect microservice pipelines for real-time data processing and
                     inference.
@@ -169,7 +168,7 @@ export default function HomePage() {
                     "AWS",
                     "OpenCV",
                     "Nvidia Jetson",
-                    "OAK-D Cameras",
+                    "FastAPI",
                   ].map((skill) => (
                     <div
                       key={skill}
@@ -212,40 +211,7 @@ export default function HomePage() {
             </div>
           </section>
 
-          {/* Stats Section */}
-          <section className="bg-muted/50 border-2 border-border rounded-lg p-8 shadow-[4px_4px_0px_0px_theme(colors.border)] relative overflow-hidden">
-            {/* Background pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="grid grid-cols-8 gap-2 h-full">
-                {Array.from({ length: 32 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="bg-primary rounded-sm animate-pulse"
-                    style={{ animationDelay: `${i * 0.1}s` }}
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center relative z-10">
-              <div className="space-y-2">
-                <div className="text-3xl font-bold font-mono text-primary">1M+</div>
-                <div className="text-sm font-mono text-muted-foreground">Daily OCR Scans</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl font-bold font-mono text-accent">65%</div>
-                <div className="text-sm font-mono text-muted-foreground">Latency Reduction</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl font-bold font-mono text-primary">25%</div>
-                <div className="text-sm font-mono text-muted-foreground">Retail Loss Reduction</div>
-              </div>
-              <div className="space-y-2">
-                <div className="text-3xl font-bold font-mono text-accent">2</div>
-                <div className="text-sm font-mono text-muted-foreground">Published Papers</div>
-              </div>
-            </div>
-          </section>
+          
 
           {/* Easter Egg Hint */}
           <div className="text-center">
