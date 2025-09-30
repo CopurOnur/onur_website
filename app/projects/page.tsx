@@ -25,6 +25,15 @@ const projects = [
     githubUrl: "https://github.com/CopurOnur/ED-MTT",
   },
   {
+    title: "Stock Advisor",
+    description:
+      "Intelligent stock analysis tool combining machine learning, technical analysis (RSI, MACD, Bollinger Bands), and news sentiment analysis. Features reinforcement learning models, ensemble predictions, and multi-day price forecasting with trading recommendations.",
+    image: "/AI4Finance.jpeg",
+    technologies: ["Python", "PyTorch", "Scikit-learn", "Streamlit", "Reinforcement Learning", "NLP"],
+    category: "Reinforcement Learning",
+    githubUrl: "https://github.com/CopurOnur/stock-advisor",
+  },
+  {
     title: "Therapist Website (CopeWell)",
     description:
       "A professional therapist website built with a clean, calming design to showcase services, background, and contact information. Features structured navigation, responsive design, and integrated forms for client outreach.",
@@ -35,7 +44,7 @@ const projects = [
   }
 ]
 
-const categories = ["All", "Computer Vision", "Web Development"]
+const categories = ["All", "Computer Vision", "Reinforcement Learning", "Web Development"]
 
 export default function ProjectsPage() {
   return (

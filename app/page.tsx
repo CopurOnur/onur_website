@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Brain, Eye, Cpu, Zap, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
-import { BlinkingCursor } from "@/components/pixel-animations"
+import Image from "next/image"
 import { KonamiCode } from "@/components/konami-code"
 import { RetroTerminal } from "@/components/retro-terminal"
 
@@ -17,24 +17,8 @@ export default function HomePage() {
           {/* Hero Section */}
           <section className="text-center space-y-8">
             <div className="relative inline-block">
-              {/* Pixel Art Avatar */}
-              <div className="w-32 h-32 mx-auto mb-6 relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-2xl shadow-[8px_8px_0px_0px_theme(colors.border)] border-4 border-border pixel-glow">
-                  {/* Simple pixel art face */}
-                  <div className="absolute top-6 left-8 w-4 h-4 bg-background rounded-sm"></div>
-                  <div className="absolute top-6 right-8 w-4 h-4 bg-background rounded-sm"></div>
-                  <div className="absolute top-12 left-10 w-2 h-2 bg-foreground rounded-full"></div>
-                  <div className="absolute top-12 right-10 w-2 h-2 bg-foreground rounded-full"></div>
-                  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-8 h-2 bg-background rounded-full"></div>
-                </div>
-                {/* Floating pixels animation */}
-                <div className="absolute -top-2 -right-2 w-3 h-3 bg-accent rounded-sm animate-bounce"></div>
-                <div className="absolute -bottom-2 -left-2 w-2 h-2 bg-primary rounded-sm animate-pulse"></div>
-              </div>
-
-              <h1 className="text-5xl md:text-6xl font-bold font-mono text-foreground mb-4 animate-in slide-in-from-bottom-4 duration-1000">
+              <h1 className="text-5xl md:text-6xl font-bold font-mono text-foreground mb-4">
                 Onur Copur
-                <BlinkingCursor className="ml-2" />
               </h1>
               <div className="flex flex-wrap justify-center gap-2 mb-6">
                 <Badge className="font-mono text-sm px-3 py-1 border-2 border-cyan-600 bg-cyan-600 text-white shadow-[2px_2px_0px_0px_theme(colors.border)]">
@@ -87,12 +71,24 @@ export default function HomePage() {
                   About Me
                 </h2>
                 <div className="space-y-4 text-foreground leading-relaxed">
-                  <p>
-                    I'm a Computer Vision / AI Engineer with expertise in developing production-grade deep
-                    learning models including LLMs, VLMs, and Foundation Models. Currently working at Prime Vision in
-                    Delft, Netherlands, where I architect microservice pipelines for real-time data processing and
-                    inference.
-                  </p>
+                  <div className="flex flex-col sm:flex-row gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="relative w-48 h-48 border-2 border-border rounded-lg overflow-hidden shadow-[4px_4px_0px_0px_theme(colors.border)]">
+                        <Image
+                          src="/portfolio_photo.jpg"
+                          alt="Onur Copur"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                    <p>
+                      I'm a Computer Vision / AI Engineer with expertise in developing production-grade deep
+                      learning models including LLMs, VLMs, and Foundation Models. Currently working at Prime Vision in
+                      Delft, Netherlands, where I architect microservice pipelines for real-time data processing and
+                      inference.
+                    </p>
+                  </div>
                   <p>
                     My work focuses on transformer-based OCR systems for national postal services and end-to-end
                     microservice pipelines for retail shrinkage detection. I've successfully deployed systems handling
