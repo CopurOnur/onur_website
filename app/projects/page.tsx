@@ -86,7 +86,7 @@ export default function ProjectsPage() {
                 className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)] hover:shadow-[6px_6px_0px_0px_theme(colors.border)] transition-all duration-200"
               >
                 <div className="flex flex-col md:flex-row gap-6">
-                  <div className="md:w-48 h-80 md:h-96 bg-muted rounded border border-border flex-shrink-0 relative overflow-hidden">
+                  <div className="w-full md:w-80 h-48 md:h-80 bg-muted rounded border border-border flex-shrink-0 relative overflow-hidden">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
