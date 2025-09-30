@@ -34,9 +34,9 @@ const projects = [
     githubUrl: "https://github.com/CopurOnur/stock-advisor",
   },
   {
-    title: "Therapist Website (CopeWell)",
+    title: "Psychological counselling website (copewell)",
     description:
-      "A professional therapist website built with a clean, calming design to showcase services, background, and contact information. Features structured navigation, responsive design, and integrated forms for client outreach.",
+      "A professional website built with a clean, calming design to showcase services, background, and contact information. Features structured navigation, responsive design, and integrated forms for client outreach.",
     image: "/copewell-landing.jpg",
     technologies: ["Node.js", "Next.js", "CSS", "HTML"],
     category: "Web Development",
