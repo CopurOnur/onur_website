@@ -7,7 +7,6 @@ const TERMINAL_MESSAGES = [
   "Importing PyTorch modules...",
   "Warming up coffee-powered CPUs...",
   "Connecting to GPU: NVIDIA RTX A30 [✓]",
-  "Feeding data to hungry neural nets...",
   "Welcome to Onur Copur's portfolio!",
 ]
 

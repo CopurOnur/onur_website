@@ -122,9 +122,12 @@ export default function CVPage() {
           <Button
             size="lg"
             className="font-mono border-2 border-primary shadow-[4px_4px_0px_0px_theme(colors.primary)] hover:shadow-[2px_2px_0px_0px_theme(colors.primary)] transition-all duration-200"
+            asChild
           >
-            <Download className="mr-2 h-5 w-5" />
-            Download PDF Resume
+            <a href="/onur_copur_cv.pdf" download>
+              <Download className="mr-2 h-5 w-5" />
+              Download PDF Resume
+            </a>
           </Button>
         </div>
 
@@ -135,7 +138,7 @@ export default function CVPage() {
           </h2>
           <div className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)]">
             <p className="text-foreground leading-relaxed">
-              Dedicated Computer Vision / AI Engineer specializing in custom deep learning models, with expertise in OCR
+              Computer Vision / AI Engineer specializing in custom deep learning models, with expertise in OCR
               solutions for postal services and product detection for retail. Expert in researching state-of-the-art
               architectures, training neural networks, and deploying scalable AI solutions. Proficient in designing
               end-to-end data pipelines and integrating models into edge devices.

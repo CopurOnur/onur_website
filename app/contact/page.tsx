@@ -140,7 +140,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-mono text-sm text-muted-foreground">Email</p>
-                    <p className="font-mono text-foreground">alex.chen@email.com</p>
+                    <p className="font-mono text-foreground">onurcopur12@gmail.com</p>
                   </div>
                 </div>
 
@@ -150,7 +150,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-mono text-sm text-muted-foreground">Location</p>
-                    <p className="font-mono text-foreground">San Francisco, CA</p>
+                    <p className="font-mono text-foreground">Delft, NL</p>
                   </div>
                 </div>
 
@@ -175,9 +175,9 @@ export default function ContactPage() {
                   className="w-full justify-start font-mono border-2 border-border shadow-[2px_2px_0px_0px_theme(colors.border)] hover:shadow-[4px_4px_0px_0px_theme(colors.border)] bg-transparent transition-all duration-200"
                   asChild
                 >
-                  <a href="https://github.com/alexchen" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/CopurOnur" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-3 h-5 w-5" />
-                    GitHub - @alexchen
+                    GitHub - @CopurOnur
                   </a>
                 </Button>
 
@@ -186,9 +186,9 @@ export default function ContactPage() {
                   className="w-full justify-start font-mono border-2 border-border shadow-[2px_2px_0px_0px_theme(colors.border)] hover:shadow-[4px_4px_0px_0px_theme(colors.border)] bg-transparent transition-all duration-200"
                   asChild
                 >
-                  <a href="https://linkedin.com/in/alexchen" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/onurcopur/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-3 h-5 w-5" />
-                    LinkedIn - Alex Chen
+                    LinkedIn - Onur Copur
                   </a>
                 </Button>
 
@@ -197,9 +197,9 @@ export default function ContactPage() {
                   className="w-full justify-start font-mono border-2 border-border shadow-[2px_2px_0px_0px_theme(colors.border)] hover:shadow-[4px_4px_0px_0px_theme(colors.border)] bg-transparent transition-all duration-200"
                   asChild
                 >
-                  <a href="https://twitter.com/alexchen_ai" target="_blank" rel="noopener noreferrer">
+                  <a href="https://x.com/copuro_onur" target="_blank" rel="noopener noreferrer">
                     <Twitter className="mr-3 h-5 w-5" />
-                    Twitter - @alexchen_ai
+                    Twitter - @copuro_onur
                   </a>
                 </Button>
               </div>
