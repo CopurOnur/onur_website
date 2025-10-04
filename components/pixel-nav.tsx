@@ -29,7 +29,6 @@ export function PixelNav() {
             <div className="h-8 w-8 bg-primary rounded-sm flex items-center justify-center">
               <div className="h-4 w-4 bg-primary-foreground rounded-[2px]"></div>
             </div>
-            <span className="font-mono text-lg font-bold text-foreground">DL_Engineer</span>
           </Link>
 
           {/* Desktop Navigation */}

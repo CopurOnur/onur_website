@@ -21,15 +21,7 @@ export default function HomePage() {
                 Onur Copur
               </h1>
               <div className="flex flex-wrap justify-center gap-2 mb-6">
-                <Badge className="font-mono text-sm px-3 py-1 border-2 border-cyan-600 bg-cyan-600 text-white shadow-[2px_2px_0px_0px_theme(colors.border)]">
-                  Deep Learning Engineer
-                </Badge>
-                <Badge
-                  variant="outline"
-                  className="font-mono text-sm px-3 py-1 border-2 border-cyan-600 text-cyan-600 bg-white shadow-[2px_2px_0px_0px_theme(colors.cyan.600)]"
-                >
-                  Computer Vision
-                </Badge>
+              
               </div>
               <p className="text-xl text-muted-foreground font-mono max-w-2xl mx-auto leading-relaxed">
                 Specializing in custom deep learning models with expertise in OCR solutions for postal services and
@@ -67,7 +59,6 @@ export default function HomePage() {
             <div className="space-y-6">
               <div className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)]">
                 <h2 className="text-2xl font-bold font-mono text-foreground mb-4 flex items-center">
-                  <Brain className="mr-3 h-6 w-6 text-primary" />
                   About Me
                 </h2>
                 <div className="space-y-4 text-foreground leading-relaxed">
@@ -144,7 +135,6 @@ export default function HomePage() {
             <div className="space-y-6">
               <div className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)]">
                 <h3 className="text-xl font-bold font-mono text-foreground mb-4 flex items-center">
-                  <Cpu className="mr-3 h-5 w-5 text-accent" />
                   Technical Expertise
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
@@ -178,7 +168,6 @@ export default function HomePage() {
 
               <div className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)]">
                 <h3 className="text-xl font-bold font-mono text-foreground mb-4 flex items-center">
-                  <Zap className="mr-3 h-5 w-5 text-primary" />
                   Research Interests
                 </h3>
                 <ul className="space-y-2 text-foreground">

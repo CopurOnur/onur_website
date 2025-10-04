@@ -13,7 +13,7 @@ export function PixelLayout({ children }: PixelLayoutProps) {
       <footer className="border-t-2 border-border bg-muted/50 py-8 mt-16 relative z-10">
         <div className="container mx-auto px-4 text-center">
           <p className="font-mono text-sm text-muted-foreground">
-            Built with pixel-perfect precision • Deep Learning Engineer Portfolio
+            Onur Copur Portfolio
           </p>
         </div>
       </footer>
