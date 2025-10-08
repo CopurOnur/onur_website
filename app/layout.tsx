@@ -8,7 +8,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Deep Learning Engineer | Pixel Portfolio",
+  title: "Onur Copur Portfolio",
   description: "Personal portfolio of a deep learning engineer specialized in computer vision",
   generator: "v0.app",
 }
