@@ -1,7 +1,7 @@
 import { PixelLayout } from "@/components/pixel-layout"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Github, Play, Code } from "lucide-react"
+import { Github, Play, Code, BookOpen } from "lucide-react"
 import Image from "next/image"
 
 const projects = [
@@ -14,6 +14,7 @@ const projects = [
     category: "Computer Vision",
     githubUrl: "https://huggingface.co/spaces/onurcopur/tattoo_search_engine/tree/main",
     demoUrl: "https://tattoo-search-engine-frontend.vercel.app/",
+    blogUrl: "https://github.com/CopurOnur/tattoo_project/blob/main/tattoo_search_engine_blog.ipynb"
   },
   {
     title: "Engagement Detection with Multi-Task Training",
@@ -121,17 +122,19 @@ export default function ProjectsPage() {
                     </div>
 
                     <div className="flex gap-3 pt-2">
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="font-mono border-2 border-border shadow-[2px_2px_0px_0px_theme(colors.border)] hover:shadow-[1px_1px_0px_0px_theme(colors.border)] bg-transparent"
-                        asChild
-                      >
-                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="mr-2 h-4 w-4" />
-                          Code
-                        </a>
-                      </Button>
+                      {project.githubUrl && (
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          className="font-mono border-2 border-border shadow-[2px_2px_0px_0px_theme(colors.border)] hover:shadow-[1px_1px_0px_0px_theme(colors.border)] bg-transparent"
+                          asChild
+                        >
+                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                            <Github className="mr-2 h-4 w-4" />
+                            Code
+                          </a>
+                        </Button>
+                      )}
                       {project.demoUrl && (
                         <Button
                           size="sm"
@@ -141,6 +144,18 @@ export default function ProjectsPage() {
                           <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                             <Play className="mr-2 h-4 w-4" />
                             Demo
+                          </a>
+                        </Button>
+                      )}
+                      {project.blogUrl && (
+                        <Button
+                          size="sm"
+                          className="font-mono border-2 border-primary shadow-[2px_2px_0px_0px_theme(colors.primary)] hover:shadow-[1px_1px_0px_0px_theme(colors.primary)]"
+                          asChild
+                        >
+                          <a href={project.blogUrl} target="_blank" rel="noopener noreferrer">
+                            <BookOpen className="mr-2 h-4 w-4" />
+                            Read
                           </a>
                         </Button>
                       )}
