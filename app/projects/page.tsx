@@ -25,6 +25,7 @@ const projects = [
     category: "AI agents",
     githubUrl: "https://github.com/CopurOnur/jobhunt_agents_backend/tree/main",
     demoUrl: "https://jobhunt-agents-frontend.vercel.app/",
+    blogUrl:"https://github.com/CopurOnur/jobhunt_agents_backend/blob/main/blogpost.md"
   },
   {
     title: "Engagement Detection with Multi-Task Training",
