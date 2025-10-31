@@ -17,6 +17,16 @@ const projects = [
     blogUrl: "https://github.com/CopurOnur/tattoo_project/blob/main/tattoo_search_engine_blog.ipynb"
   },
   {
+    title: "Agentic Job hunting",
+    description:
+      "An agentic job hunting application based on openai agents sdk. The first agent periodically looks for jobs in the internet and the second agent customizes your cover letter and cv for the selected positions based on the job descriptions.",
+    image: "/openai_agents.webp",
+    technologies: ["openai agents sdk", "pydantic", "SQLite", "Next.js", "FastAPI", "TypeScript", "Docker"],
+    category: "AI agents",
+    githubUrl: "https://github.com/CopurOnur/jobhunt_agents_backend/tree/main",
+    demoUrl: "https://jobhunt-agents-frontend.vercel.app/",
+  },
+  {
     title: "Engagement Detection with Multi-Task Training",
     description:
       "Deep learning system for detecting student engagement levels in e-learning environments using multi-task training with MSE and triplet loss. Uses OpenFace and Bi-LSTM to analyze non-verbal communication. Published at ICIAP 2021.",
