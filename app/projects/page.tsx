@@ -22,7 +22,7 @@ const projects = [
       "An agentic job hunting application based on openai agents sdk. The first agent periodically looks for jobs in the internet and the second agent customizes your cover letter and cv for the selected positions based on the job descriptions.",
     image: "/openai_agents.webp",
     technologies: ["openai agents sdk", "pydantic", "SQLite", "Next.js", "FastAPI", "TypeScript", "Docker"],
-    category: "AI agents",
+    category: "Agentic AI",
     githubUrl: "https://github.com/CopurOnur/jobhunt_agents_backend/tree/main",
     demoUrl: "https://jobhunt-agents-frontend.vercel.app/",
     blogUrl:"https://github.com/CopurOnur/jobhunt_agents_backend/blob/main/blogpost.md"
@@ -56,7 +56,7 @@ const projects = [
   }
 ]
 
-const categories = ["All", "Computer Vision", "Reinforcement Learning", "Web Development"]
+const categories = ["All", "Computer Vision", "Reinforcement Learning", "Agentic AI", "Web Development"]
 
 export default function ProjectsPage() {
   return (
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
           <h1 className="text-4xl font-bold font-mono text-foreground">My Projects</h1>
           <p className="text-lg text-muted-foreground font-mono max-w-2xl mx-auto">
             A showcase of deep learning projects, tools, and experiments that demonstrate practical applications of
-            computer vision research.
+            SOTA models.
           </p>
         </div>
 
