@@ -5,13 +5,14 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
-import { Menu, X, Code, FileText, Briefcase, User, Mail } from "lucide-react"
+import { Menu, X, Code, FileText, Briefcase, User, Mail, Building2 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 const navItems = [
   { href: "/", label: "About", icon: User },
   { href: "/papers", label: "Papers", icon: FileText },
   { href: "/projects", label: "Projects", icon: Code },
+  { href: "/industrial-projects", label: "Industry", icon: Building2 },
   { href: "/cv", label: "CV", icon: Briefcase },
   { href: "/contact", label: "Contact", icon: Mail },
 ]
