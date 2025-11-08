@@ -10,10 +10,9 @@ const experience = [
     location: "Delft, Netherlands",
     period: "May 2022 - Present",
     description: [
-      "Develop and deploy production-grade deep learning models (LLMs, VLMs, Foundation Models)",
-      "Architect and maintain microservice pipelines for real-time data processing and inference",
-      "Lead reading groups and technical seminars to foster continuous learning and keep the team at the forefront of state-of-the-art AI and deep learning research",
-      "Collaborate with cross-functional teams to modernize legacy computer vision systems into scalable microservices",
+      "Developed and deployed production-grade deep learning models using containerized architectures across multiple innovation projects, expanding the company’s computer vision solutions portfolio. ",
+      "Modernized legacy computer vision systems with state-of-the-art deep learning models, delivering measurable performance improvements across logistics, warehouse management, aviation, and retail applications.",
+      "Led multiple proof-of-concept (PoC) studies to translate state-of-the-art computer vision research into robust, real-time applications deployed in real-world environments.",
     ],
   },
   {
@@ -22,9 +21,9 @@ const experience = [
     location: "Kortrijk, Belgium",
     period: "March 2021 - October 2021",
     description: [
-      "Developed a deep learning system to analyze video data and assess subject engagement during educational content",
-      "Implemented multi-task training approaches for engagement detection in e-learning environments",
-      "Published research findings in ICIAP 2021 conference proceedings",
+      "Developed a deep learning system to analyze video data and assess subject engagement during educational content.",
+      "Implemented multi-task training approaches for engagement detection in e-learning environments.",
+      "Published research findings in ICIAP 2021 conference proceedings.",
     ],
   },
   {
@@ -33,9 +32,9 @@ const experience = [
     location: "Izmir, Turkey",
     period: "May 2018 - August 2019",
     description: [
-      "Developed a demand forecasting tool for retail, tobacco, and FMCG sectors",
-      "Created a genetic algorithm route optimizer to improve logistics efficiency",
-      "Built predictive models to optimize supply chain operations",
+      "Developed a demand forecasting tool for retail, tobacco, and FMCG sectors.",
+      "Created a genetic algorithm route optimizer to improve logistics efficiency.",
+      "Built predictive models to optimize supply chain operations.",
     ],
   },
 ]
@@ -59,7 +58,7 @@ const education = [
 
 const skills = {
   "Programming & Data Science": ["Python", "SQL", "LangChain", "Pandas", "NumPy", "PyTorch", "TensorFlow"],
-  "MLOps & Deployment": ["Docker", "Triton Inference Server", "MLFlow", "Jenkins", "Airflow", "ONNX", "TensorRT"],
+  "MLOps & Deployment": ["Docker", "Kubernetes", "Triton Inference Server", "MLFlow", "Jenkins", "Airflow", "ONNX", "TensorRT"],
   "Cloud & Infrastructure": ["Microsoft Azure", "AWS", "Google Cloud Platform", "Linux"],
   "Edge AI & Embedded CV": ["OpenCV", "Nvidia Jetson", "OAK-D Cameras", "ESP32"],
   "Project Management": ["SCRUM", "Jira", "CI/CD", "Git"],
@@ -138,10 +137,7 @@ export default function CVPage() {
           </h2>
           <div className="bg-card border-2 border-border rounded-lg p-6 shadow-[4px_4px_0px_0px_theme(colors.border)]">
             <p className="text-foreground leading-relaxed">
-              Computer Vision / AI Engineer specializing in custom deep learning models, with expertise in OCR
-              solutions for postal services and product detection for retail. Expert in researching state-of-the-art
-              architectures, training neural networks, and deploying scalable AI solutions. Proficient in designing
-              end-to-end data pipelines and integrating models into edge devices.
+              Computer Vision Engineer specializing in custom deep learning models, with expertise in object detection for retail and OCR solutions for postal services. Skilled in Python backend development in production environments, CI/CD automation, and hardware–software integration. Proficient in designing end-to-end data pipelines, deploying scalable AI solutions, and integrating models into edge devices.
             </p>
           </div>
         </section>
